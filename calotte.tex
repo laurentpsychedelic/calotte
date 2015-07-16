@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX book template                           %%
+%% Author:  Amber Jain (http://amberj.devio.us/) %%
+%% License: ISC license                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a5paper,11pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[francais]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 'dedication' environment: To add a dedication paragraph at the start of book %
+% Source: http://www.tug.org/pipermail/texhax/2010-June/015184.html            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter quote at the start of chapter        %
+% Source: http://tex.stackexchange.com/a/53380 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First page of book which contains 'stuff' like: %
+%  - Book title, subtitle                         %
+%  - Book author name                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Book's title and subtitle
+\title{{\Huge J'irai cracher sur la calotte de vos morts}}
+% Author
+\author{\textsc{Boris Lopez}}
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add a dedication paragraph to dedicate your book to someone %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}
+Je dédicace cet ouvrage au bagnard de Yamagata et au gitan de Tagajo.
+Et à tous les manouches du Japon, à qui je souhaite de sucer la calotte de leurs morts. Amicalement... 
+\end{dedication}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auto-generated table of contents, list of figures and list of tables %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents
+
+%\mainmatter
+
+%%%%%%%%%%%
+% Preface %
+%%%%%%%%%%%
+%\chapter*{Preface}
+%...
+
+%%%%%%%%%%%%%%%%
+% NEW CHAPTER! %
+%%%%%%%%%%%%%%%%
+\chapter{Prologue}
+\begin{chapquote}{David Lopez, 2012}
+``lopez de clermont ferrand sa vo rien !!!''
+\end{chapquote}
+
+\indent - Une petite dédicace pour les trois bâtards de leurs morts qui m'ont tombés dessus,
+le sang de leurs morts !
+Le Djo, le... le David, et le Hoffmann de ses morts ! La calotte de ses morts, je lui suce...
+La cervelle de leurs morts !
+Dis-leur ce qu'il y a ! Dis-leur ce qu'il y a à dire !
+
+- Le cercueil de leurs morts, ils...
+
+- Le sang de leurs morts, ils mangeront !
+Le Hoffmann de tes morts ! Lopez de vos morts !
+Je vais vous enculer vos morts, vous avez. Djo, Tu vas baiser tes morts, tu vas baiser.
+Ta femme, je l'ai prise, je l'ai enculée !
+Je lui ai dechargé dans la bouche, espèce de putain !
+Le sang de tes morts, vous allez manger ! La calotte de vos morts, le sang de vos morts !...
+
+Viens-là, toi ! Viens-là. \%\$\#\^{}05@ les morts... \%\$\#\^0{}5@ les morts, ou je te tue.
+ 
+- Qu'ils baisent l...
+
+- Écoutez-bien ! Le Hoffmann, Sami !
+
+- Laisse-moi parler !!
+
+- Ferme ta gueule.
+
+- Laisse-moi parler !
+
+- Dis-leur bien.
+
+- Oui, qu'ils baisent le cercueil de leurs morts. Vous voyez où j'en suis maintenant, à cause du Sami, du David...
+
+- Le sang de vos morts, vous allez manger ! La cervelle de vos morts !
+De toute façon on est en deux-mille douze, bientôt c'est la fin du monde.
+Vous allez payer, vous inquiétez pas.
+Le sang de vos morts, vous allez manger !
+La calotte de vos morts !...
+
+C'est bon !
+
+%%%%%%%%%%%%%%%%
+% NEW CHAPTER! %
+%%%%%%%%%%%%%%%%
+\chapter{L'escalade}
+\begin{chapquote}{Christian Lopez du 63, 2015}
+``t'etais mort par terre dans ta maison de pédé''
+\end{chapquote}
+
+
+
+\end{document}
